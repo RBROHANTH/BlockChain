@@ -6,24 +6,9 @@
 <title>Blockchain Answer Bank</title>
 <meta name="description" content="20ITT71 Blockchain Technology – answers for CAT 1, CAT 2, CAT 3 question banks and the Nov 2024 semester paper, written from the Unit 1–5 slides.">
 <style>
+/* dark theme only */
 :root{
-  --bg:#f6f7fb; --card:#ffffff; --ink:#1c2233; --muted:#5d667a; --line:#e3e6ef;
-  --accent:#3d5afe; --accent-ink:#ffffff; --accent-soft:#eef1ff;
-  --intro:#0f9d8a; --content:#3d5afe; --summary:#b26a00; --revise:#c2185b;
-  --revise-bg:#fff4f8; --summary-bg:#fff8ec; --intro-bg:#eefaf8;
-  --code:#f1f3f8; --shadow:0 1px 2px rgba(20,30,60,.06),0 4px 14px rgba(20,30,60,.05);
-  --fig-bg:#ffffff;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0f1320; --card:#171c2c; --ink:#e6e9f2; --muted:#9aa3b8; --line:#2a3148;
-    --accent:#8c9eff; --accent-ink:#0f1320; --accent-soft:#222a45;
-    --intro:#4dd0bd; --content:#8c9eff; --summary:#ffb74d; --revise:#f48fb1;
-    --revise-bg:#2a1b25; --summary-bg:#2a2317; --intro-bg:#15292a;
-    --code:#202741; --shadow:none; --fig-bg:#f4f5f8;
-  }
-}
-:root[data-theme="dark"]{
+  color-scheme:dark;
   --bg:#0f1320; --card:#171c2c; --ink:#e6e9f2; --muted:#9aa3b8; --line:#2a3148;
   --accent:#8c9eff; --accent-ink:#0f1320; --accent-soft:#222a45;
   --intro:#4dd0bd; --content:#8c9eff; --summary:#ffb74d; --revise:#f48fb1;
@@ -164,9 +149,7 @@ footer{max-width:980px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font
     <div class="brand">
       <h1>Blockchain Technology — Answer Bank</h1><span class="code">20ITT71</span>
       <div class="tools">
-        <div class="gm" title="Switch every long answer at once"><button class="lbl" disabled style="cursor:default">All:</button><button data-gm="16" class="on">16M</button><button data-gm="8">8M</button></div>
-        <button class="btn" id="theme" aria-label="Toggle dark mode">◐</button>
-      </div>
+        <div class="gm" title="Switch every long answer at once"><button class="lbl" disabled style="cursor:default">All:</button><button data-gm="16" class="on">16M</button><button data-gm="8">8M</button></div>      </div>
     </div>
     <div class="search"><input id="q" type="search" placeholder="Search questions (e.g. gas, RSA, wallet, consensus)…" autocomplete="off"></div>
     <nav class="tabs" id="tabs"></nav>
@@ -10056,11 +10039,8 @@ C = 16 × 4 × 9 × 25 × 5 mod 77 → 16 × 4 = 64; 64 × 9 = 576 mod 77 = 37; 
 (function(){
   var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
   var root=document.documentElement;
-  root.setAttribute('data-theme',store.get('theme')||'dark');
-  document.getElementById('theme').onclick=function(){
-    var n=root.getAttribute('data-theme')==='dark'?'light':'dark'; root.setAttribute('data-theme',n); store.set('theme',n);
-    redrawAll();
-  };
+  root.setAttribute('data-theme','dark');
+  store.set('theme','');
   // ---- diagrams (Mermaid, drawn lazily when they scroll into view) ----
   var MID=0, CLS='\nclassDef a fill:#3d5afe33,stroke:#6c7dff,stroke-width:1.5px\nclassDef b fill:#f59e0b33,stroke:#f59e0b,stroke-width:1.5px\nclassDef c fill:#14b8a633,stroke:#14b8a6,stroke-width:1.5px\nclassDef d fill:#ec489933,stroke:#ec4899,stroke-width:1.5px\n';
   function mtheme(){
