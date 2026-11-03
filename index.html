@@ -123,6 +123,7 @@ details[open]>summary:after{transform:rotate(-135deg)}
 .svgfig .bx2{fill:var(--summary-bg);stroke:var(--summary);stroke-width:1.5}
 .svgfig .bx3{fill:var(--intro-bg);stroke:var(--intro);stroke-width:1.5}
 .svgfig .ar{stroke:var(--muted);stroke-width:1.6;fill:none;marker-end:url(#ah)}
+.imp-tag{background:#c2185b}
 .refnote{color:var(--muted);font-size:.92rem}
 .reflink{font-size:.85rem;color:var(--muted);margin:8px 0 0}
 .empty{display:none;text-align:center;color:var(--muted);padding:30px}
@@ -156,6 +157,1165 @@ footer{max-width:980px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font
   </div>
 </header>
 <main>
+<section class="exam" id="imp" data-label="⚡ Important Topics"><div class="exam-head"><h2>⚡ Important Topics</h2><p>The 11 must-study topics, lesson by lesson – full 16-mark answers with an 8-mark toggle</p></div><div class="part partb"><div class="part-head"><h3>Lesson 1 — Introduction to Blockchain</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
+<details class="lq" id="i1"><summary><span class="qn">1</span><span class="qt">Applications of Blockchain</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>Digital currencies were the <strong>first application</strong> of blockchain, <em>arguably without realizing its true potential</em>. Only with <strong>Blockchain 2.0 (≈2013)</strong> were its real benefits seen in many industries. A blockchain offers <strong>decentralization, transparency, immutability, security, smart contracts and cost saving</strong>, so any sector where several parties must share trusted records can benefit.</p>
+<p>The slides (Unit V – <em>Blockchain outside of currencies</em>) focus on four main industries: <strong>Internet of Things, Government, Health and Finance</strong>, plus many other uses such as supply chain, DRM and real estate.</p>
+<blockquote>
+<p><strong>Key point:</strong> Applications grew with the tiers – <strong>1.0 currency → 2.0 finance &amp; smart contracts → 3.0 government, health, media, arts, justice</strong>.</p>
+</blockquote>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><figure class="dia"><div class="mmd" data-src="mindmap
+  root((Applications))
+    Finance
+      Payments
+      Post-trade settlement
+      Insurance
+      KYC / AML
+    Government
+      Digital ID
+      E-voting
+      Border control
+      Land records
+    Health
+      Medical records
+      Anti-counterfeit drugs
+    IoT
+      M2M payments
+      Firmware updates
+    Others
+      Supply chain
+      DRM / music
+      Real estate"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Applications of blockchain</figcaption></figure>
+<h3>2.1 Why blockchain suits these applications</h3>
+<table>
+<thead>
+<tr>
+  <th>Blockchain property</th>
+  <th>What it gives the application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Decentralization</td>
+  <td>No single owner or point of failure</td>
+</tr>
+<tr>
+  <td>Immutability</td>
+  <td>Tamper-proof records and audit trail</td>
+</tr>
+<tr>
+  <td>Transparency</td>
+  <td>Everyone sees one version of truth</td>
+</tr>
+<tr>
+  <td>Cryptographic security</td>
+  <td>Integrity, authentication, non-repudiation</td>
+</tr>
+<tr>
+  <td>Smart contracts</td>
+  <td>Automatic execution of business rules</td>
+</tr>
+<tr>
+  <td>No intermediary</td>
+  <td>Lower cost and faster settlement</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 Cryptocurrency &amp; payments (Blockchain 1.0)</h3>
+<ul>
+<li><strong>Bitcoin</strong> and altcoins – peer-to-peer electronic cash <strong>without a bank</strong>.</li>
+<li>Cross-border <strong>money transfer by disintermediation</strong>; online payments via QR codes / payment URIs; <strong>Lightning network</strong> for fast off-chain payments.</li>
+</ul>
+<h3>2.3 Internet of Things (IoT)</h3>
+<ul>
+<li>A <strong>blockchain layer</strong> is added to the IoT model so devices transact <strong>machine-to-machine</strong> using smart contracts.</li>
+<li><em>Examples:</em> a vacant hotel room rents itself and opens the lock after payment; a washing machine orders detergent; IBM Blue Horizon, Filament.</li>
+<li>Benefits: trust, lower cost, no central server, DoS resistance, secure firmware updates.</li>
+</ul>
+<h3>2.4 Government</h3>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  G((&quot;Government&quot;)):::a --&gt; BC[&quot;Border control&lt;br&gt;instant passport blacklist&quot;]:::b
+  G --&gt; V[&quot;E-voting&lt;br&gt;no double voting&quot;]:::b
+  G --&gt; ID[&quot;Citizen digital ID&lt;br&gt;one ID for all services&quot;]:::b
+  G --&gt; M[&quot;Land records, births,&lt;br&gt;marriages, taxes, licences&quot;]:::b"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Government uses of blockchain</figcaption></figure>
+<ul>
+<li><strong>Border control</strong> – passport hash (MRZ + biometric) and a <strong>blacklist in a smart contract</strong>; any blacklisting is <strong>instantly visible to all border points</strong>; details stored in IPFS/BigChainDB.</li>
+<li><strong>Voting</strong> – votes signed (integrity, authenticity), immutable, <strong>biometric ID + smart contract</strong> prevents double voting; <strong>zero-knowledge proofs</strong> protect privacy.</li>
+<li><strong>Citizen identification</strong> – one government-issued digital ID for pensions, tax, benefits; user controls who uses their data; notarize birth certificates, deeds.</li>
+<li><strong>Miscellaneous</strong> – tax collection, benefit disbursement, <strong>land ownership records</strong>, life-event registration, vehicle registration and licences.</li>
+</ul>
+<h3>2.5 Health</h3>
+<ul>
+<li>Immutable, auditable <strong>shared medical records</strong> between hospitals, pharma companies and patients.</li>
+<li>Fights <strong>counterfeit medicines</strong>; faster <strong>insurance claims</strong>; reduced fraud and data breaches.</li>
+<li>Mining power for science – <strong>FoldingCoin</strong> rewards FLDC tokens for computing that helps find cures.</li>
+</ul>
+<h3>2.6 Finance</h3>
+<ul>
+<li><strong>Insurance</strong> – smart contracts + IoT telemetry + <strong>oracles</strong> verify and pay claims automatically (e.g. vehicle accident data); <strong>Dynamis</strong> P2P insurance on Ethereum.</li>
+<li><strong>Post-trade settlement</strong> – trade life cycle <em>execution → clearing → settlement</em> takes 2–3 days via clearing houses; a <strong>shared ledger</strong> gives peer-to-peer settlement, less cost, risk and time.</li>
+<li><strong>Financial crime prevention</strong> – shared <strong>KYC</strong> ledger of verified identities; regulators get <strong>AML</strong> reporting access to a private blockchain.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  subgraph Before[&quot;Traditional (2–3 days)&quot;]
+    B1[&quot;Buyer&quot;] --&gt; BR[&quot;Brokers&quot;] --&gt; CH[&quot;Clearing house&quot;] --&gt; CU[&quot;Custodians&quot;] --&gt; S1[&quot;Seller&quot;]
+  end
+  subgraph After[&quot;With blockchain&quot;]
+    B2[&quot;Buyer&quot;]:::a &lt;--&gt; L[(&quot;Shared ledger +&lt;br&gt;smart contracts&quot;)]:::c &lt;--&gt; S2[&quot;Seller&quot;]:::a
+  end"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Post-trade settlement – before and after blockchain</figcaption></figure>
+<h3>2.7 Other applications</h3>
+<table>
+<thead>
+<tr>
+  <th>Area</th>
+  <th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Supply chain</td>
+  <td>Track goods from supplier to customer; anti-counterfeit</td>
+</tr>
+<tr>
+  <td>Digital Rights Management / online music</td>
+  <td>Smart property – content cannot be double-owned</td>
+</tr>
+<tr>
+  <td>Real estate</td>
+  <td>Tamper-proof land titles, faster transfer</td>
+</tr>
+<tr>
+  <td>Law enforcement</td>
+  <td>Evidence trails</td>
+</tr>
+<tr>
+  <td>Decentralized storage &amp; naming</td>
+  <td>IPFS, Namecoin (.bit domains)</td>
+</tr>
+<tr>
+  <td>DApps</td>
+  <td>KYC-Chain, OpenBazaar (P2P market), Lazooz (decentralized Uber)</td>
+</tr>
+</tbody>
+</table>
+<h3>2.8 Challenges for applications</h3>
+<p>Scalability, privacy of public ledgers, regulation, immature technology, key management, and the fact that <em>not everything needs to be decentralized</em>.</p>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>Blockchain moved from <strong>cryptocurrency</strong> to <strong>IoT, government, health and finance</strong> and many other areas.</li>
+<li>Its <strong>immutability, transparency, decentralization and smart contracts</strong> enable M2M payments, instant passport blacklisting, tamper-proof voting, digital IDs, shared health records, automatic insurance claims, fast post-trade settlement and KYC/AML – though scalability, privacy and regulation must still be handled.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Four main sectors (Unit V): <strong>IoT · Government · Health · Finance</strong>.</li>
+<li>Govt: <strong>border control, voting, citizen ID, land/birth records</strong>.</li>
+<li>Finance: <strong>insurance, post-trade settlement, KYC/AML</strong>.</li>
+<li>Health: <strong>records, counterfeit drugs, FoldingCoin</strong>.</li>
+<li>IoT examples: <strong>hotel room, washing machine, Filament, IBM Blue Horizon</strong>.</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>Blockchain started with cryptocurrency, but its immutability, transparency and smart contracts suit many industries.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><figure class="dia"><div class="mmd" data-src="mindmap
+  root((Applications))
+    Finance
+      Payments
+      Post-trade settlement
+      Insurance
+      KYC / AML
+    Government
+      Digital ID
+      E-voting
+      Border control
+      Land records
+    Health
+      Medical records
+      Anti-counterfeit drugs
+    IoT
+      M2M payments
+      Firmware updates
+    Others
+      Supply chain
+      DRM / music
+      Real estate"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Applications of blockchain</figcaption></figure>
+<ul>
+<li><strong>Cryptocurrency &amp; payments</strong> – Bitcoin, disintermediated money transfer.</li>
+<li><strong>IoT</strong> – blockchain layer for M2M payments (self-renting hotel room, washing machine ordering detergent).</li>
+<li><strong>Government</strong> – border control (smart-contract blacklist), e-voting (no double voting), citizen digital ID, land and birth records.</li>
+<li><strong>Health</strong> – shared medical records, anti-counterfeit medicines, FoldingCoin.</li>
+<li><strong>Finance</strong> – automated insurance claims, post-trade settlement without clearing houses, KYC/AML.</li>
+<li><strong>Others</strong> – supply chain, DRM, real estate, DApps (KYC-Chain, OpenBazaar).</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Blockchain is useful wherever many parties need one trusted, tamper-proof record.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>IoT · Government · Health · Finance (four main sectors).</li>
+</ul>
+</div></div></div></details>
+<details class="lq" id="i2"><summary><span class="qn">2</span><span class="qt">Types of Blockchain</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>A blockchain is a peer-to-peer distributed ledger; blockchains are classified mainly by <strong>who can join, read, write and validate</strong> (public vs private/permissioned) and by <strong>how they handle value</strong> (tokenized vs tokenless). The slides list: <strong>public, semi-private, sidechains, permissioned ledger, distributed ledger, shared ledger, fully private, tokenized and tokenless</strong> blockchains; consortium chains are a common form of permissioned ledger.</p>
+<blockquote>
+<p><strong>Key point:</strong> The choice of type also decides the <strong>consensus algorithm</strong> – public → PoW/PoS; permissioned → PBFT/agreement protocols.</p>
+</blockquote>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><figure class="dia"><div class="mmd" data-src="flowchart TB
+  DLT[&quot;Distributed Ledger Technology&quot;]:::a --&gt; BC[&quot;Blockchains&quot;]
+  DLT --&gt; DL[&quot;Distributed ledgers&lt;br&gt;(e.g. Ripple)&quot;]
+  BC --&gt; PUB[&quot;Public&lt;br&gt;permissionless&quot;]:::c
+  BC --&gt; PRI[&quot;Private&lt;br&gt;permissioned&quot;]:::b
+  BC --&gt; CON[&quot;Consortium&quot;]:::b
+  BC --&gt; APP[&quot;Application-specific&quot;]
+  BC --&gt; SC[&quot;Sidechains&quot;]
+  SC --&gt; S1[&quot;One-way pegged&quot;]
+  SC --&gt; S2[&quot;Two-way pegged&quot;]
+  DL --&gt; SP[&quot;Special purpose&quot;]"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Taxonomy of distributed ledger technology</figcaption></figure>
+<h3>2.1 Public blockchains (permissionless ledgers)</h3>
+<ul>
+<li><strong>Open to the public</strong>; anyone can participate as a node in decision making.</li>
+<li>Users <strong>may or may not be rewarded</strong>; ledger <strong>not owned by anyone</strong>.</li>
+<li>Every user keeps a copy and uses <strong>distributed consensus</strong> (PoW/PoS).</li>
+<li><em>Examples:</em> <strong>Bitcoin, Ethereum</strong>.</li>
+</ul>
+<h3>2.2 Private / fully private (proprietary) blockchains</h3>
+<ul>
+<li>Controlled by <strong>one organization</strong>; deviate from the core idea of decentralization.</li>
+<li>Useful <strong>inside an organization</strong> or between <strong>government departments</strong> to share data with guaranteed authenticity.</li>
+</ul>
+<h3>2.3 Permissioned ledgers</h3>
+<ul>
+<li>Participants are <strong>known and already trusted</strong>.</li>
+<li><strong>No distributed consensus needed</strong> – an <strong>agreement protocol</strong> keeps a shared truth.</li>
+<li>Need not be private – can be public with <strong>regulated access control</strong>.</li>
+<li><em>Examples:</em> <strong>Hyperledger Fabric, Corda, Quorum</strong>.</li>
+</ul>
+<h3>2.4 Consortium blockchains</h3>
+<ul>
+<li>A permissioned chain governed by a <strong>group of organizations</strong> (banks, supply-chain partners); validators are pre-selected; consensus such as PBFT.</li>
+</ul>
+<h3>2.5 Semi-private blockchains</h3>
+<ul>
+<li><strong>Part private, part public</strong> – private part controlled by a group, public part open to anyone.</li>
+</ul>
+<h3>2.6 Sidechains (pegged sidechains)</h3>
+<ul>
+<li>Coins can be <strong>moved from one blockchain to another and back</strong>.</li>
+<li><strong>One-way pegged</strong> – coins <strong>burnt</strong> (sent to an unspendable address) to bootstrap a new altcoin or create scarcity.</li>
+<li><strong>Two-way pegged</strong> – move from main chain to sidechain <strong>and back</strong>.</li>
+<li><em>Example:</em> <strong>Rootstock</strong> – smart contracts for Bitcoin, faster throughput.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  subgraph One[&quot;One-way peg&quot;]
+    M1[&quot;Main chain BTC&quot;]:::a -- &quot;burn&quot; --&gt; X[&quot;Unspendable address&quot;]:::d
+    X -.-&gt;|&quot;proof of burn&quot;| S1[&quot;New altcoin&quot;]:::c
+  end
+  subgraph Two[&quot;Two-way peg&quot;]
+    M2[&quot;Main chain&quot;]:::a -- &quot;lock &amp; move&quot; --&gt; S2[&quot;Sidechain&quot;]:::c
+    S2 -- &quot;move back&quot; --&gt; M2
+  end"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>One-way vs two-way pegged sidechain</figcaption></figure>
+<h3>2.7 Distributed ledger</h3>
+<ul>
+<li>Ledger spread across many participants/sites; <strong>records stored contiguously instead of in blocks</strong>.</li>
+<li><em>Example:</em> <strong>Ripple</strong> – global payment network.</li>
+</ul>
+<h3>2.8 Shared ledger</h3>
+<ul>
+<li>Generic term for <strong>any application or database shared by the public or a consortium</strong>.</li>
+</ul>
+<h3>2.9 Tokenized vs tokenless blockchains</h3>
+<table>
+<thead>
+<tr>
+  <th>Tokenized</th>
+  <th>Tokenless</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Generate cryptocurrency through mining or initial distribution</td>
+  <td>No basic unit of value transfer</td>
+</tr>
+<tr>
+  <td><em>Bitcoin, Ethereum</em></td>
+  <td>Share data among already-trusted parties (<em>Hyperledger Fabric</em>, <em>Quorum</em> style)</td>
+</tr>
+<tr>
+  <td>&quot;Real&quot; blockchains with incentives</td>
+  <td>Valuable where value transfer is not needed</td>
+</tr>
+</tbody>
+</table>
+<h3>2.10 Comparison of main types</h3>
+<table>
+<thead>
+<tr>
+  <th>Basis</th>
+  <th>Public</th>
+  <th>Private</th>
+  <th>Consortium / Permissioned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Access</td>
+  <td>Anyone</td>
+  <td>One organization</td>
+  <td>Selected organizations</td>
+</tr>
+<tr>
+  <td>Identity</td>
+  <td>Pseudonymous</td>
+  <td>Known</td>
+  <td>Known</td>
+</tr>
+<tr>
+  <td>Consensus</td>
+  <td>PoW, PoS</td>
+  <td>Simple agreement</td>
+  <td>PBFT, RAFT, PoA</td>
+</tr>
+<tr>
+  <td>Speed</td>
+  <td>Slow</td>
+  <td>Fast</td>
+  <td>Fast</td>
+</tr>
+<tr>
+  <td>Decentralization</td>
+  <td>Full</td>
+  <td>Low</td>
+  <td>Partial</td>
+</tr>
+<tr>
+  <td>Privacy</td>
+  <td>Transparent</td>
+  <td>High</td>
+  <td>High</td>
+</tr>
+<tr>
+  <td>Example</td>
+  <td>Bitcoin, Ethereum</td>
+  <td>Internal company ledger</td>
+  <td>Hyperledger Fabric, Corda</td>
+</tr>
+</tbody>
+</table>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  Q1{&quot;Must anyone be able&lt;br&gt;to join?&quot;}:::a -- yes --&gt; PUB[&quot;Public blockchain&quot;]:::c
+  Q1 -- no --&gt; Q2{&quot;One organization&lt;br&gt;or many?&quot;}
+  Q2 -- one --&gt; PRI[&quot;Private blockchain&quot;]:::b
+  Q2 -- many --&gt; CON[&quot;Consortium /&lt;br&gt;permissioned ledger&quot;]:::b"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Which type should I use?</figcaption></figure>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>Blockchains are <strong>public (permissionless)</strong>, <strong>private</strong>, <strong>permissioned/consortium</strong>, <strong>semi-private</strong>, <strong>sidechains (one-way / two-way pegged)</strong>, <strong>distributed ledgers</strong>, <strong>shared ledgers</strong>, and <strong>tokenized or tokenless</strong>.</li>
+<li>Public chains give openness and censorship-resistance; private and consortium chains give speed, privacy and control – and the type chosen decides the consensus mechanism.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Public = permissionless = anyone = PoW/PoS = Bitcoin/Ethereum.</li>
+<li>Permissioned = known &amp; trusted = agreement protocol = Fabric/Corda.</li>
+<li>Sidechain: <strong>one-way (burn)</strong> vs <strong>two-way peg</strong>; <strong>Rootstock</strong>.</li>
+<li>Distributed ledger = records <strong>contiguous, not in blocks</strong> (Ripple).</li>
+<li>Tokenized (coins) vs tokenless (data sharing).</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>Blockchains are classified by who can participate and whether they carry tokens.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><figure class="dia"><div class="mmd" data-src="flowchart TB
+  DLT[&quot;Distributed Ledger Technology&quot;]:::a --&gt; BC[&quot;Blockchains&quot;]
+  DLT --&gt; DL[&quot;Distributed ledgers&lt;br&gt;(e.g. Ripple)&quot;]
+  BC --&gt; PUB[&quot;Public&lt;br&gt;permissionless&quot;]:::c
+  BC --&gt; PRI[&quot;Private&lt;br&gt;permissioned&quot;]:::b
+  BC --&gt; CON[&quot;Consortium&quot;]:::b
+  BC --&gt; APP[&quot;Application-specific&quot;]
+  BC --&gt; SC[&quot;Sidechains&quot;]
+  SC --&gt; S1[&quot;One-way pegged&quot;]
+  SC --&gt; S2[&quot;Two-way pegged&quot;]
+  DL --&gt; SP[&quot;Special purpose&quot;]"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Taxonomy of distributed ledger technology</figcaption></figure>
+<ul>
+<li><strong>Public (permissionless)</strong> – anyone joins; PoW/PoS; Bitcoin, Ethereum.</li>
+<li><strong>Private</strong> – one organization; useful between government departments.</li>
+<li><strong>Permissioned / consortium</strong> – known trusted members; agreement protocols (PBFT); Hyperledger Fabric, Corda.</li>
+<li><strong>Semi-private</strong> – part public, part private.</li>
+<li><strong>Sidechains</strong> – one-way peg (burn coins) or two-way peg; Rootstock.</li>
+<li><strong>Distributed ledger</strong> – records stored contiguously (Ripple); <strong>shared ledger</strong> – any shared database.</li>
+<li><strong>Tokenized</strong> (generate coins) vs <strong>tokenless</strong> (only data sharing).</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Public = open &amp; trustless; private/consortium = fast, private, controlled.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Public ↔ Private ↔ Consortium ↔ Semi-private ↔ Sidechain ↔ Tokenized/Tokenless.</li>
+</ul>
+</div></div></div></details>
+<details class="lq" id="i3"><summary><span class="qn">3</span><span class="qt">CAP Theorem (and how it applies to blockchain)</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>Blockchain is a <strong>decentralized distributed system</strong> – many nodes work together and appear to users as one logical platform. The main challenges in designing distributed systems are <strong>coordination between nodes and fault tolerance</strong>, and the <strong>CAP theorem</strong> (Eric Brewer) states another fundamental limit:</p>
+<blockquote>
+<p><strong>A distributed system cannot have all three desired properties – Consistency, Availability and Partition tolerance – simultaneously; it can provide at most two.</strong></p>
+</blockquote>
+<p>Understanding which property a blockchain gives up explains <strong>why Bitcoin needs mining and confirmations</strong>.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><h3>2.1 The three properties</h3>
+<table>
+<thead>
+<tr>
+  <th>Property</th>
+  <th>Definition (slides)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Consistency (C)</strong></td>
+  <td>All nodes in the distributed system have a <strong>single, latest copy of the data</strong></td>
+</tr>
+<tr>
+  <td><strong>Availability (A)</strong></td>
+  <td>The system is <strong>up, accessible and accepting requests</strong>, responding with data without failure whenever required</td>
+</tr>
+<tr>
+  <td><strong>Partition tolerance (P)</strong></td>
+  <td>If a group of nodes fails (network split), the <strong>system still continues to operate correctly</strong></td>
+</tr>
+</tbody>
+</table>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  C((&quot;Consistency&quot;)):::a ---|&quot;CA: single-site databases&quot;| A((&quot;Availability&quot;)):::b
+  A ---|&quot;AP: Bitcoin, public blockchains&lt;br&gt;(eventual consistency)&quot;| P((&quot;Partition&lt;br&gt;tolerance&quot;)):::c
+  P ---|&quot;CP: PBFT / permissioned ledgers&quot;| C"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>CAP theorem – pick at most two</figcaption></figure>
+<h3>2.2 The possible combinations</h3>
+<table>
+<thead>
+<tr>
+  <th>Choice</th>
+  <th>Gives up</th>
+  <th>Behaviour</th>
+  <th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>CA</strong></td>
+  <td>Partition tolerance</td>
+  <td>Works only without network splits</td>
+  <td>Traditional single-site RDBMS</td>
+</tr>
+<tr>
+  <td><strong>CP</strong></td>
+  <td>Availability</td>
+  <td>During a partition, refuses requests to stay consistent</td>
+  <td>PBFT-based / permissioned ledgers (stop if quorum lost)</td>
+</tr>
+<tr>
+  <td><strong>AP</strong></td>
+  <td>Strong consistency</td>
+  <td>Always answers; nodes may temporarily disagree, converge later</td>
+  <td><strong>Bitcoin, Ethereum (PoW)</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>In a real network, partitions <strong>will</strong> happen, so practical systems choose between <strong>CP</strong> and <strong>AP</strong>.</p>
+</blockquote>
+<h3>2.3 Supporting ideas from the slides</h3>
+<ul>
+<li><strong>Fault tolerance</strong> is achieved by <strong>replication</strong>.</li>
+<li><strong>Consistency</strong> is achieved using <strong>consensus algorithms</strong> so that all nodes have the same copy – also called <strong>state machine replication</strong>.</li>
+<li>Faulty nodes are of two types: <strong>crashed</strong> nodes and <strong>malicious (Byzantine)</strong> nodes – the latter are hard to detect.</li>
+</ul>
+<h3>2.4 CAP theorem and blockchain</h3>
+<ul>
+<li><em>&quot;It seems CAP is violated in blockchain (especially Bitcoin), but this is not the case.&quot;</em></li>
+<li>In blockchains, <strong>consistency is sacrificed in favour of availability and partition tolerance</strong>.</li>
+<li>Consistency is <strong>not achieved simultaneously</strong> with A and P, but <strong>over time</strong> → <strong>eventual consistency</strong>: consistency results from <strong>validation by multiple nodes over time</strong>.</li>
+<li>For this purpose <strong>mining</strong> was introduced in Bitcoin – a process that achieves consensus using <strong>Proof of Work</strong> and adds blocks to the chain.</li>
+</ul>
+<h3>2.5 Example – a temporary fork</h3>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  B100[&quot;Block 100&quot;]:::a --&gt; A101[&quot;Block 101-A&lt;br&gt;(miner in Asia)&quot;]
+  B100 --&gt; E101[&quot;Block 101-B&lt;br&gt;(miner in Europe)&quot;]
+  A101 --&gt; A102[&quot;Block 102&lt;br&gt;built on 101-A&quot;]:::c
+  E101 -.-&gt;|&quot;orphaned when&lt;br&gt;longer chain wins&quot;| O[&quot;Discarded&quot;]:::d
+  A102 --&gt; F[&quot;All nodes converge&lt;br&gt;on the longest chain&quot;]:::c"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Eventual consistency through the longest-chain rule</figcaption></figure>
+<ol>
+<li>Two miners find block 101 at the same time → nodes temporarily see <strong>different chains</strong> (not consistent, but still <strong>available</strong>).</li>
+<li>The network keeps working even if some nodes are cut off (<strong>partition tolerant</strong>).</li>
+<li>The next block extends one branch; nodes adopt the <strong>longest chain</strong>; the other block becomes an <strong>orphan</strong>.</li>
+<li>After about <strong>6 confirmations</strong>, the probability of reversal is negligible → <strong>eventually consistent</strong>.</li>
+</ol>
+<h3>2.6 Permissioned blockchains</h3>
+<ul>
+<li>PBFT-style ledgers (Hyperledger Fabric) give <strong>immediate finality</strong> – strong consistency – but if too many nodes are unreachable (no quorum) they <strong>stop committing</strong>, i.e. they lean towards <strong>CP</strong>.</li>
+</ul>
+<h3>2.7 Comparison</h3>
+<table>
+<thead>
+<tr>
+  <th>Aspect</th>
+  <th>Public blockchain (AP)</th>
+  <th>Permissioned PBFT ledger (CP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>During network split</td>
+  <td>Keeps producing blocks on both sides</td>
+  <td>Halts without quorum</td>
+</tr>
+<tr>
+  <td>Consistency</td>
+  <td>Eventual (confirmations)</td>
+  <td>Immediate finality</td>
+</tr>
+<tr>
+  <td>Mechanism</td>
+  <td>Mining / PoW, longest chain</td>
+  <td>Voting rounds</td>
+</tr>
+<tr>
+  <td>Users see</td>
+  <td>Possible orphaned blocks</td>
+  <td>No forks</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>CAP theorem: a distributed system can guarantee only <strong>two of Consistency, Availability and Partition tolerance</strong>.</li>
+<li>Public blockchains like Bitcoin choose <strong>Availability + Partition tolerance</strong> and reach <strong>eventual consistency over time</strong> through <strong>mining (PoW) and the longest-chain rule</strong> – which is why transactions need confirmations. Permissioned PBFT ledgers instead favour <strong>Consistency</strong> with immediate finality.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li><strong>C</strong> = single latest copy · <strong>A</strong> = always up &amp; responding · <strong>P</strong> = works despite node failures.</li>
+<li>Only <strong>two of three</strong>; real systems pick <strong>CP or AP</strong>.</li>
+<li>Blockchain = <strong>AP + eventual consistency</strong>, achieved by <strong>mining/PoW</strong>.</li>
+<li>Consistency via <strong>consensus = state machine replication</strong>; fault tolerance via <strong>replication</strong>.</li>
+<li>Faulty nodes: <strong>crashed</strong> and <strong>Byzantine</strong>.</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>CAP theorem: a distributed system cannot provide Consistency, Availability and Partition tolerance at the same time – only two.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><ul>
+<li><strong>Consistency</strong> – every node has the single latest copy of data.</li>
+<li><strong>Availability</strong> – system always up and responding.</li>
+<li><strong>Partition tolerance</strong> – keeps working even if some nodes fail.</li>
+<li>Combinations: <strong>CA</strong> (single-site DB), <strong>CP</strong> (PBFT ledgers), <strong>AP</strong> (Bitcoin).</li>
+<li><strong>In blockchain:</strong> consistency is sacrificed for A and P; it is reached <strong>over time – eventual consistency</strong> – through validation by many nodes. <strong>Mining (PoW)</strong> and the <strong>longest-chain rule</strong> resolve temporary forks; ~6 confirmations make a transaction final.</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Blockchains are AP systems that become consistent eventually through mining.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>C-A-P definitions; blockchain = AP + eventual consistency (mining).</li>
+</ul>
+</div></div></div></details>
+<details class="lq" id="i11"><summary><span class="qn">4</span><span class="qt">Consensus Mechanism – concept, example and types of algorithms</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="ref" data-ref="c1b8" data-m=""></div></div></details></div></div>
+<div class="part partb"><div class="part-head"><h3>Lesson 2 — Cryptography</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
+<details class="lq" id="i4"><summary><span class="qn">1</span><span class="qt">RSA Algorithm (key generation, encryption, decryption, signature, example)</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p><strong>RSA</strong> (Rivest–Shamir–Adleman) is the most widely known <strong>asymmetric (public-key)</strong> algorithm. Each user has a <strong>public key</strong> that anyone may use and a <strong>private key</strong> kept secret.</p>
+<ul>
+<li><strong>Encrypt with the public key, decrypt with the private key → confidentiality.</strong></li>
+<li><strong>Sign with the private key, verify with the public key → authentication, integrity, non-repudiation.</strong></li>
+</ul>
+<p>Its security rests on <strong>integer factorization</strong>: multiplying two large primes is easy, but factoring their product is computationally infeasible. Slides: RSA key length of <strong>2048 bits</strong> is now used instead of 1024.</p>
+<blockquote>
+<p><strong>Key point:</strong> <strong>C = Mᵉ mod n · M = Cᵈ mod n · d = e⁻¹ mod φ(n)</strong>.</p>
+</blockquote>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><h3>2.1 Overview</h3>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  subgraph KG[&quot;Key generation (receiver)&quot;]
+    K1[&quot;Choose large primes p, q&quot;]:::a --&gt; K2[&quot;n = p × q (modulus)&quot;] --&gt; K3[&quot;φ(n) = (p−1)(q−1)&quot;] --&gt; K4[&quot;Choose e: 1 &lt; e &lt; φ(n),&lt;br&gt;gcd(e, φ(n)) = 1&quot;] --&gt; K5[&quot;d = e⁻¹ mod φ(n)&lt;br&gt;(Extended Euclid)&quot;]:::b
+  end
+  K5 --&gt; PU[&quot;Public key (e, n)&quot;]:::c
+  K5 --&gt; PR[&quot;Private key (d, n)&lt;br&gt;keep p, q, d secret&quot;]:::d
+  PU --&gt; EN[&quot;Sender: C = Mᵉ mod n&quot;]:::c
+  EN --&gt; DE[&quot;Receiver: M = Cᵈ mod n&quot;]:::d
+  PR --&gt; DE"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>RSA algorithm – key generation, encryption, decryption</figcaption></figure>
+<h3>2.2 Key generation steps (slides)</h3>
+<ol>
+<li><strong>Modulus generation</strong> – select two very large primes <strong>p</strong> and <strong>q</strong>; compute <strong>n = p · q</strong>.</li>
+<li><strong>Generate co-prime</strong> – choose <strong>e</strong>, greater than 1 and less than (p−1)(q−1), such that <strong>no number other than 1 divides both e and (p−1)(q−1)</strong> → e is co-prime to φ(n).</li>
+<li><strong>Generate public key</strong> – the pair <strong>(e, n)</strong> is shared; <strong>p and q stay secret</strong>.</li>
+<li><strong>Generate private key</strong> – <strong>d is the inverse of e modulo (p−1)(q−1)</strong>, found by the <strong>extended Euclidean algorithm</strong>.</li>
+</ol>
+<ul>
+<li>Use large primes so that finding p, q from n is computationally infeasible.</li>
+</ul>
+<h3>2.3 Encryption and decryption</h3>
+<ul>
+<li>Message must be converted to a number <strong>M &lt; n</strong> (e.g. A = 01 … Z = 26).</li>
+<li>Exponentiation is done with <strong>square-and-multiply</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Encryption: C = Pᵉ mod n</strong>    <strong>Decryption: P = Cᵈ mod n</strong></p>
+</blockquote>
+<h3>2.4 Why it works</h3>
+<ul>
+<li>e·d ≡ 1 (mod φ(n)) → e·d = 1 + kφ(n).</li>
+<li>By Euler's theorem M^φ(n) ≡ 1 (mod n), so <strong>Cᵈ = M^(ed) = M · (M^φ(n))ᵏ ≡ M (mod n)</strong>.</li>
+</ul>
+<h3>2.5 Worked example – encryption (p = 5, q = 11, e = 3, M = 9)</h3>
+<table>
+<thead>
+<tr>
+  <th>Step</th>
+  <th>Working</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>n</td>
+  <td>5 × 11</td>
+  <td><strong>55</strong></td>
+</tr>
+<tr>
+  <td>φ(n)</td>
+  <td>4 × 10</td>
+  <td><strong>40</strong></td>
+</tr>
+<tr>
+  <td>e</td>
+  <td>gcd(3, 40) = 1</td>
+  <td><strong>3</strong></td>
+</tr>
+<tr>
+  <td>d</td>
+  <td>3d ≡ 1 mod 40 → 3 × 27 = 81 = 2·40 + 1</td>
+  <td><strong>27</strong></td>
+</tr>
+<tr>
+  <td>Encrypt</td>
+  <td>C = 9³ mod 55 = 729 mod 55</td>
+  <td><strong>C = 14</strong></td>
+</tr>
+<tr>
+  <td>Decrypt</td>
+  <td>14²⁷ mod 55 (27 = 16+8+2+1): 36 × 16 × 31 × 14 mod 55</td>
+  <td><strong>M = 9 ✔</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Powers of 14 mod 55: 14² = 31, 14⁴ = 26, 14⁸ = 16, 14¹⁶ = 36.</p>
+<h3>2.6 RSA digital signature</h3>
+<p><strong>Two steps (slides):</strong> 1. calculate the <strong>hash</strong> of the data; 2. <strong>sign the hash with the signer's private key</strong>.</p>
+<blockquote>
+<p><strong>Signature S = H(m)ᵈ mod n</strong>    <strong>Verify: H(m) ≟ Sᵉ mod n</strong></p>
+</blockquote>
+<p><strong>Properties:</strong> <strong>authenticity, unforgeability, non-reusability</strong> (+ integrity and non-repudiation).</p>
+<p><em>Example</em> (same keys, hash H = 9): S = 9²⁷ mod 55. Powers of 9: 9² = 26, 9⁴ = 16, 9⁸ = 36, 9¹⁶ = 31 → 31 × 36 × 26 × 9 mod 55 = <strong>4</strong>. Verify: 4³ = 64 mod 55 = <strong>9</strong> ✔.</p>
+<figure class="dia"><div class="mmd" data-src="sequenceDiagram
+  participant A as Alice (private d)
+  participant B as Bob (has Alice&#x27;s public e, n)
+  A-&gt;&gt;A: h = Hash(message)
+  A-&gt;&gt;A: S = h^d mod n
+  A-&gt;&gt;B: message + signature S
+  B-&gt;&gt;B: h1 = Hash(message)
+  B-&gt;&gt;B: h2 = S^e mod n
+  B-&gt;&gt;B: valid if h1 = h2"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>RSA signing and verification</figcaption></figure>
+<h3>2.7 Sign-then-encrypt vs encrypt-then-sign</h3>
+<table>
+<thead>
+<tr>
+  <th>Scheme</th>
+  <th>Steps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Sign then encrypt</strong> (more secure)</td>
+  <td>Sign data with sender's private key, append signature, then encrypt data + signature with receiver's public key</td>
+</tr>
+<tr>
+  <td><strong>Encrypt then sign</strong></td>
+  <td>Encrypt with receiver's public key, then sign the ciphertext</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>In practice a <strong>digital certificate</strong> from a <strong>Certificate Authority (CA)</strong> binds a public key to an identity.</li>
+</ul>
+<h3>2.8 Security and comparison with ECC</h3>
+<table>
+<thead>
+<tr>
+  <th>Point</th>
+  <th>RSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Hard problem</td>
+  <td>Integer factorization</td>
+</tr>
+<tr>
+  <td>Recommended key</td>
+  <td>2048 bits (3072 ≈ 256-bit ECC)</td>
+</tr>
+<tr>
+  <td>Speed</td>
+  <td>Slower, larger keys than ECC</td>
+</tr>
+<tr>
+  <td>Weak choices</td>
+  <td>Small primes; e ≡ 1 mod λ(n) makes C = M (e.g. p = 7, q = 11, e = 31)</td>
+</tr>
+<tr>
+  <td>Use</td>
+  <td>TLS certificates, signatures; blockchains prefer <strong>ECC/ECDSA</strong> for smaller keys</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>RSA generates <strong>n = pq, φ(n) = (p−1)(q−1)</strong>, chooses <strong>e co-prime to φ(n)</strong> and computes <strong>d = e⁻¹ mod φ(n)</strong>; public key (e, n), private key (d, n).</li>
+<li><strong>Encryption C = Mᵉ mod n</strong>, <strong>decryption M = Cᵈ mod n</strong>; <strong>signature S = H(m)ᵈ mod n</strong> verified by <strong>Sᵉ mod n = H(m)</strong>. Example: p = 5, q = 11, e = 3 → d = 27, 9 → 14 → 9.</li>
+<li>Security comes from the difficulty of <strong>factoring large n</strong>.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li><strong>n = pq · φ = (p−1)(q−1) · gcd(e, φ) = 1 · d = e⁻¹ mod φ</strong>.</li>
+<li><strong>C = Mᵉ mod n · M = Cᵈ mod n · S = hᵈ mod n · verify Sᵉ mod n</strong>.</li>
+<li>Signature properties: <strong>authenticity, unforgeability, non-reusability</strong>.</li>
+<li>Sign-then-encrypt is more secure; key size <strong>2048 bits</strong>.</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>RSA is a public-key algorithm based on the difficulty of factoring n = p × q.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><ul>
+<li><strong>Key generation:</strong> choose primes p, q; n = pq; φ(n) = (p−1)(q−1); choose e with gcd(e, φ) = 1; d = e⁻¹ mod φ(n). Public (e, n), private (d, n).</li>
+<li><strong>Encryption:</strong> C = Mᵉ mod n. <strong>Decryption:</strong> M = Cᵈ mod n.</li>
+<li><strong>Example:</strong> p = 5, q = 11 → n = 55, φ = 40, e = 3, d = 27; M = 9 → C = 729 mod 55 = <strong>14</strong> → 14²⁷ mod 55 = 9.</li>
+<li><strong>Signature:</strong> hash the data, S = hᵈ mod n; verify Sᵉ mod n = h; gives authenticity, unforgeability, non-reusability.</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Public key encrypts/verifies, private key decrypts/signs.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>n, φ, e, d formulas; C = Mᵉ mod n.</li>
+</ul>
+</div></div></div></details>
+<details class="lq" id="i5"><summary><span class="qn">2</span><span class="qt">Elliptic Curve Cryptography (ECC)</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p><strong>Elliptic Curve Cryptography (ECC)</strong> is public-key cryptography based on the <strong>discrete logarithm problem on elliptic curves over finite (Galois) fields</strong>.</p>
+<p>Its main benefit (slides): <em>it needs a <strong>smaller key size</strong> while providing the <strong>same level of security</strong> as RSA</em> – the same security is achieved with <strong>256-bit ECC operands versus 3072-bit RSA</strong>. Because it needs less space, ECC is popular on <strong>embedded platforms</strong> and in blockchains: <strong>Bitcoin and Ethereum</strong> generate keys on the <strong>secp256k1</strong> curve and sign with <strong>ECDSA</strong>.</p>
+<blockquote>
+<p><strong>Key point:</strong> Private key = random integer <strong>d</strong>; public key = point <strong>Q = d·G</strong>; recovering d from Q is infeasible (<strong>ECDLP</strong>).</p>
+</blockquote>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><h3>2.1 The elliptic curve</h3>
+<ul>
+<li>For cryptography the curve is defined over a <strong>prime finite field</strong> (not real numbers).</li>
+<li>The <strong>points on the curve</strong> plus a &quot;point at infinity&quot; O form a <strong>cyclic group</strong>; a <strong>generator / base point G</strong> has prime order <strong>n</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>y² = x³ + Ax + B (mod p)</strong>  (with 4A³ + 27B² ≠ 0)</p>
+</blockquote>
+<h3>2.2 Point operations</h3>
+<p><strong>Point addition P + Q</strong> (P ≠ Q): draw a line through P and Q; it meets the curve at a third point; reflect it over the x-axis.</p>
+<blockquote>
+<p>λ = (y₂ − y₁)/(x₂ − x₁) mod p,  x₃ = λ² − x₁ − x₂ mod p,  y₃ = λ(x₁ − x₃) − y₁ mod p</p>
+</blockquote>
+<p><strong>Point doubling 2P = P + P:</strong> use the tangent at P.</p>
+<blockquote>
+<p>λ = (3x₁² + A)/(2y₁) mod p, then x₃, y₃ as above</p>
+</blockquote>
+<p><strong>Scalar multiplication</strong> d·G = G + G + … (d times), done quickly with <strong>double-and-add</strong>.</p>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  F[&quot;Finite field&lt;br&gt;arithmetic mod p&quot;]:::a --&gt; PA[&quot;Point addition&lt;br&gt;P + Q&quot;]
+  F --&gt; PD[&quot;Point doubling&lt;br&gt;2P&quot;]
+  PA --&gt; SM[&quot;Scalar multiplication&lt;br&gt;Q = d·G (double-and-add)&quot;]:::b
+  PD --&gt; SM
+  SM --&gt; KP[&quot;Key pairs&quot;]:::c
+  SM --&gt; DH[&quot;ECDH key exchange&quot;]:::c
+  SM --&gt; DS[&quot;ECDSA signatures&quot;]:::c"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>ECC operations build on each other</figcaption></figure>
+<h3>2.3 Worked example (curve y² = x³ + 2x + 2 mod 17, G = (5, 1), n = 19)</h3>
+<ul>
+<li><strong>2G:</strong> λ = (3·25 + 2)/(2·1) = 77/2 ≡ 9 × 9 = 81 ≡ 13; x = 169 − 10 ≡ <strong>6</strong>; y = 13(5 − 6) − 1 ≡ <strong>3</strong> → <strong>2G = (6, 3)</strong></li>
+<li><strong>3G = 2G + G:</strong> λ = (1 − 3)/(5 − 6) = 2; x = 4 − 6 − 5 ≡ <strong>10</strong>; y = 2(6 − 10) − 3 ≡ <strong>6</strong> → <strong>3G = (10, 6)</strong></li>
+<li>Continuing: 4G = (3, 1), 5G = (9, 16), 6G = (16, 13), <strong>7G = (0, 6)</strong>, …, 19G = O.</li>
+</ul>
+<h3>2.4 Discrete logarithm problem (ECDLP)</h3>
+<ul>
+<li>All points form a <strong>cyclic group</strong> under certain conditions.</li>
+<li><strong>Private key = randomly chosen integer d; public key = point Q = d·G on the curve.</strong></li>
+<li>Computing Q from d is easy; finding <strong>d from Q and G is computationally infeasible</strong> → security.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  D[&quot;Private key d&lt;br&gt;(random number)&quot;]:::b -- &quot;easy: d·G&quot; --&gt; Q[&quot;Public key Q&lt;br&gt;(curve point)&quot;]:::a
+  Q -.-&gt;|&quot;infeasible: ECDLP&quot;| D"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>The ECC one-way function</figcaption></figure>
+<h3>2.5 ECC Diffie-Hellman key exchange (ECDH)</h3>
+<table>
+<thead>
+<tr>
+  <th>Step</th>
+  <th>User A</th>
+  <th>User B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Global elements</td>
+  <td>curve E_q(a, b), point G</td>
+  <td>same</td>
+</tr>
+<tr>
+  <td>Key generation</td>
+  <td>private n_A &lt; n; public <strong>P_A = n_A × G</strong></td>
+  <td>private n_B &lt; n; public <strong>P_B = n_B × G</strong></td>
+</tr>
+<tr>
+  <td>Secret key</td>
+  <td><strong>K = n_A × P_B</strong></td>
+  <td><strong>K = n_B × P_A</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Both get the same K = n_A·n_B·G.</p>
+<p><em>Example:</em> n_A = 3 → P_A = 3G = (10, 6); n_B = 7 → P_B = 7G = (0, 6); shared <strong>K = 3·7G = 21G = 2G = (6, 3)</strong> (since 19G = O).</p>
+<figure class="dia"><div class="mmd" data-src="sequenceDiagram
+  participant A as User A (n_A)
+  participant B as User B (n_B)
+  A-&gt;&gt;B: P_A = n_A × G
+  B-&gt;&gt;A: P_B = n_B × G
+  A-&gt;&gt;A: K = n_A × P_B
+  B-&gt;&gt;B: K = n_B × P_A
+  Note over A,B: Same shared key K = n_A·n_B·G"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>ECDH – both sides compute the same secret</figcaption></figure>
+<h3>2.6 ECDSA – signatures with ECC</h3>
+<ul>
+<li><strong>Sign:</strong> h = hash(m); random k; R = k·G, <strong>r = R.x mod n</strong>; <strong>s = k⁻¹(h + d·r) mod n</strong> → signature (r, s).</li>
+<li><strong>Verify:</strong> w = s⁻¹; u₁ = h·w; u₂ = r·w; R′ = u₁G + u₂Q; valid if <strong>R′.x = r</strong>.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  subgraph K[&quot;1 · Key generation&quot;]
+    K1[&quot;Choose curve, G, order n&quot;] --&gt; K2[&quot;Private key d (random)&quot;]:::b --&gt; K3[&quot;Public key Q = d·G&quot;]:::a
+  end
+  subgraph S[&quot;2 · Signing&quot;]
+    S1[&quot;h = hash(msg)&quot;] --&gt; S2[&quot;random k&quot;] --&gt; S3[&quot;R = k·G, r = R.x mod n&quot;] --&gt; S4[&quot;s = k⁻¹(h + d·r) mod n&quot;] --&gt; S5[&quot;Signature (r, s)&quot;]:::c
+  end
+  subgraph V[&quot;3 · Verification&quot;]
+    V1[&quot;w = s⁻¹ mod n&quot;] --&gt; V2[&quot;u₁ = h·w, u₂ = r·w&quot;] --&gt; V3[&quot;R&#x27; = u₁·G + u₂·Q&quot;] --&gt; V4{&quot;R&#x27;.x = r ?&quot;}
+    V4 -- yes --&gt; V5[&quot;Valid&quot;]:::c
+    V4 -- no --&gt; V6[&quot;Invalid&quot;]:::d
+  end
+  K --&gt; S --&gt; V"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>ECDSA – key generation, signing and verification</figcaption></figure>
+<h3>2.7 Advantages of ECC over RSA</h3>
+<table>
+<thead>
+<tr>
+  <th>RSA key size (bits)</th>
+  <th>Equivalent ECC key size (bits)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1024</td>
+  <td>160</td>
+</tr>
+<tr>
+  <td>2048</td>
+  <td>224</td>
+</tr>
+<tr>
+  <td>3072</td>
+  <td>256</td>
+</tr>
+<tr>
+  <td>7680</td>
+  <td>384</td>
+</tr>
+<tr>
+  <td>15360</td>
+  <td>521</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Smaller keys</strong> → less storage, memory and bandwidth.</li>
+<li><strong>Faster</strong> key generation and signing.</li>
+<li>Ideal for <strong>mobile, IoT and embedded</strong> devices and for compact blockchain transactions.</li>
+</ul>
+<h3>2.8 Use of ECC in blockchain</h3>
+<ul>
+<li><strong>Bitcoin:</strong> secp256k1; private key = random <strong>256-bit</strong> number; public key = (x, y) point – uncompressed <strong>65 bytes (prefix 04)</strong> or compressed <strong>33 bytes</strong> (x only); address = Base58Check(RIPEMD-160(SHA-256(pubkey))).</li>
+<li><strong>Ethereum:</strong> ECDSA signature <strong>(v, r, s)</strong>; <strong>ECRECOVER</strong> precompiled contract recovers the sender's public key.</li>
+<li>Cryptosystems on ECC: <strong>ECDSA</strong> (signatures) and <strong>ECDH</strong> (key exchange).</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>ECC uses points on <strong>y² = x³ + Ax + B (mod p)</strong>; <strong>point addition, doubling and scalar multiplication</strong> give key pairs where <strong>Q = d·G</strong> and recovering d is the hard <strong>ECDLP</strong>.</li>
+<li>It powers <strong>ECDH</strong> key exchange and <strong>ECDSA</strong> signatures, gives RSA-level security with <strong>much smaller keys (256 vs 3072 bits)</strong>, and is used by <strong>Bitcoin (secp256k1) and Ethereum</strong>.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Curve <strong>y² = x³ + Ax + B mod p</strong>; addition λ = (y₂−y₁)/(x₂−x₁); doubling λ = (3x²+A)/2y.</li>
+<li><strong>Q = d·G</strong>; ECDLP hard.</li>
+<li>ECDH: <strong>K = n_A·P_B = n_B·P_A</strong>.</li>
+<li>256-bit ECC ≈ 3072-bit RSA; Bitcoin <strong>secp256k1</strong>.</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>ECC is public-key cryptography based on the discrete logarithm problem on elliptic curves; it gives RSA-level security with smaller keys.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><ul>
+<li><strong>Curve:</strong> y² = x³ + Ax + B (mod p); points form a cyclic group with base point G.</li>
+<li><strong>Operations:</strong> point addition λ = (y₂−y₁)/(x₂−x₁); doubling λ = (3x²+A)/2y; scalar multiplication Q = d·G.</li>
+<li><strong>Keys:</strong> private d (random), public Q = d·G; finding d from Q is infeasible (ECDLP).</li>
+<li><strong>ECDH:</strong> P_A = n_A·G, P_B = n_B·G, shared K = n_A·P_B = n_B·P_A.</li>
+<li><strong>ECDSA:</strong> s = k⁻¹(h + d·r) mod n.</li>
+<li><strong>Advantage:</strong> 256-bit ECC ≈ 3072-bit RSA → less storage, faster; used in Bitcoin/Ethereum (secp256k1).</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Small keys + strong security make ECC the blockchain standard.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Q = d·G; 256 vs 3072 bits; secp256k1.</li>
+</ul>
+</div></div></div></details></div></div>
+<div class="part partb"><div class="part-head"><h3>Lesson 3 — Bitcoin & Alternative Coins</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
+<details class="lq" id="i6"><summary><span class="qn">1</span><span class="qt">Alternative Coins (Altcoins)</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="ref" data-ref="c2b10" data-m=""></div></div></details></div></div>
+<div class="part partb"><div class="part-head"><h3>Lesson 4 — Ethereum</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
+<details class="lq" id="i7"><summary><span class="qn">1</span><span class="qt">Ethereum – architecture and components</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="ref" data-ref="c3b1" data-m=""></div></div></details>
+<details class="lq" id="i8"><summary><span class="qn">2</span><span class="qt">Ethereum Virtual Machine (EVM)</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="ref" data-ref="c3b2" data-m=""></div></div></details></div></div>
+<div class="part partb"><div class="part-head"><h3>Lesson 5 — Hyperledger & Blockchain Applications</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
+<details class="lq" id="i9"><summary><span class="qn">1</span><span class="qt">Hyperledger – projects, reference architecture and Fabric</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p><strong>Hyperledger is not a blockchain</strong> – it is a project initiated by the <strong>Linux Foundation in December 2015</strong> to advance blockchain technology. Its aim is to build an <strong>open-source distributed-ledger framework</strong> for <strong>cross-industry</strong> blockchain applications, to support <strong>global business transactions</strong>, and to improve <strong>reliability and performance</strong> of blockchain systems.</p>
+<p>Hyperledger hosts several projects contributed by members (IBM, Intel, Soramitsu, R3 …), and is evolving into a <strong>protocol / specification for business transactions</strong> that can be used as a reference for building permissioned blockchains.</p>
+<blockquote>
+<p><strong>Key point:</strong> Hyperledger = <strong>umbrella project</strong> (Fabric, Sawtooth Lake, Iroha, Explorer, Chaintool, SDK Py, Corda) built around a <strong>modular, permissioned reference architecture</strong>.</p>
+</blockquote>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><h3>2.1 Project life cycle</h3>
+<figure class="dia"><div class="mmd" data-src="flowchart LR
+  P[&quot;Proposal&quot;]:::a --&gt; I[&quot;Incubation&lt;br&gt;(working code + active community)&quot;]:::b --&gt; A[&quot;Active&quot;]:::c
+  A --&gt; D[&quot;Deprecated&quot;] --&gt; E[&quot;End of Life&quot;]:::d"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Stages of a Hyperledger project</figcaption></figure>
+<ul>
+<li>About <strong>100 members</strong> and <strong>120+ contributors</strong> (at the time of the slides).</li>
+</ul>
+<h3>2.2 Hyperledger projects</h3>
+<figure class="dia"><div class="mmd" data-src="mindmap
+  root((Hyperledger))
+    Fabric
+      IBM and DAH
+      Pluggable chaincode
+    Sawtooth Lake
+      Intel
+      PoET consensus
+      Transaction families
+    Iroha
+      C++ mobile components
+      Sumeragi BFT
+    Blockchain Explorer
+      View blocks and transactions
+    Fabric Chaintool
+      Chaincode compiler
+    Fabric SDK Py
+      Python SDK
+    Corda
+      R3
+      Financial services"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Projects under the Hyperledger umbrella</figcaption></figure>
+<table>
+<thead>
+<tr>
+  <th>Project</th>
+  <th>Contributed by</th>
+  <th>Key features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Fabric</strong></td>
+  <td>IBM &amp; Digital Asset Holdings</td>
+  <td>Foundation for blockchain solutions; <strong>pluggable architecture</strong> (consensus etc.); chaincode in containers</td>
+</tr>
+<tr>
+  <td><strong>Sawtooth Lake</strong></td>
+  <td>Intel (2016)</td>
+  <td>Decouples ledger from transactions via <strong>transaction families</strong>; <strong>PoET</strong> consensus with <strong>Intel SGX</strong>; permissioned &amp; permissionless</td>
+</tr>
+<tr>
+  <td><strong>Iroha</strong></td>
+  <td>Soramitsu</td>
+  <td>Reusable <strong>C++</strong> components, mobile focus; <strong>Sumeragi</strong> chain-based BFT consensus; libraries for ed25519, SHA-3, P2P, iOS/Android/JS</td>
+</tr>
+<tr>
+  <td><strong>Blockchain Explorer</strong></td>
+  <td>–</td>
+  <td>View &amp; query transactions, blocks, network info; interact with chaincode</td>
+</tr>
+<tr>
+  <td><strong>Fabric Chaintool</strong></td>
+  <td>–</td>
+  <td>Chaincode compiler: Google protocol buffers → chaincode; packages for deployment</td>
+</tr>
+<tr>
+  <td><strong>Fabric SDK Py</strong></td>
+  <td>–</td>
+  <td>Python SDK to interact with Fabric</td>
+</tr>
+<tr>
+  <td><strong>Corda</strong></td>
+  <td>R3</td>
+  <td>Not a blockchain; for <strong>financial industry</strong>; notaries, flows, state objects</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 Reference architecture</h3>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  API[&quot;Hyperledger APIs, SDKs, CLI&quot;]:::a
+  API --&gt; ID[&quot;Identity services&lt;br&gt;ledger &amp; resource identities&quot;]
+  API --&gt; PO[&quot;Policy services&lt;br&gt;configuration · access control · privacy&quot;]
+  API --&gt; BS[&quot;Blockchain services&lt;br&gt;consensus manager · distributed ledger&lt;br&gt;P2P protocol · ledger storage&quot;]:::b
+  API --&gt; SC[&quot;Smart-contract services&lt;br&gt;secure container · registry · life cycle&quot;]:::c
+  ID &amp; PO &amp; BS &amp; SC --&gt; EV[&quot;Event stream (gRPC) across all services&quot;]:::d"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Hyperledger reference architecture</figcaption></figure>
+<ul>
+<li>Two main components: <strong>Hyperledger services</strong> and <strong>Hyperledger APIs, SDKs and CLI</strong>.</li>
+<li><strong>Services:</strong> <strong>identity services, policy services, blockchain services, smart-contract services</strong>.</li>
+<li><strong>APIs/SDKs/CLI</strong> – interface into blockchain services.</li>
+<li>An <strong>event stream (gRPC channel)</strong> runs across all services; events are pre-defined or custom; validating peers or chaincode emit events that applications listen to.</li>
+</ul>
+<h3>2.4 Requirements (design principles)</h3>
+<table>
+<thead>
+<tr>
+  <th>Requirement</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Modular approach</strong></td>
+  <td>Storage, policy, chaincode, access control, consensus are <strong>plug-and-play</strong></td>
+</tr>
+<tr>
+  <td><strong>Privacy &amp; confidentiality</strong></td>
+  <td>Choice of cryptographic modules without hurting performance</td>
+</tr>
+<tr>
+  <td><strong>Identity</strong></td>
+  <td>Flexible <strong>PKI</strong> for access control; optionally hide identity</td>
+</tr>
+<tr>
+  <td><strong>Auditability</strong></td>
+  <td>Immutable audit trail of identities, operations and changes</td>
+</tr>
+<tr>
+  <td><strong>Interoperability</strong></td>
+  <td>Common standards so different fabrics can communicate</td>
+</tr>
+<tr>
+  <td><strong>Portability</strong></td>
+  <td>Run on many platforms without code changes</td>
+</tr>
+</tbody>
+</table>
+<h3>2.5 Hyperledger Fabric (main project)</h3>
+<ul>
+<li><strong>Permissioned</strong>; all participants register with <strong>membership services</strong>.</li>
+<li>Smart contracts = <strong>chaincode</strong>, sandboxed in secure <strong>Docker</strong> containers (Go, Java, Node.js).</li>
+<li>Transactions private to general users, traceable by <strong>authorized auditors</strong>.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  F((&quot;Fabric&quot;)):::a --&gt; MS[&quot;Membership services&lt;br&gt;RA · ECA (Ecerts) · TCA (Tcerts) · TLS CA&quot;]:::b
+  F --&gt; BS[&quot;Blockchain services&lt;br&gt;consensus manager (batch PBFT, SIEVE, NOOPS)&lt;br&gt;distributed ledger + world state (RocksDB)&lt;br&gt;P2P protocol (gRPC)&quot;]:::b
+  F --&gt; CS[&quot;Chaincode services&lt;br&gt;secure container · secure registry&quot;]:::b
+  F --&gt; EA[&quot;Events · APIs · CLIs&quot;]:::b"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Hyperledger Fabric architecture</figcaption></figure>
+<ul>
+<li><strong>Peers:</strong> validating (run consensus, validate, maintain ledger) and non-validating (build &amp; forward transactions).</li>
+<li><strong>Chaincode functions:</strong> <strong>Init(), Invoke(), Query(), Main()</strong>.</li>
+<li><strong>Transaction flow:</strong> propose → endorse → order → validate → commit.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="sequenceDiagram
+  participant App as Client app
+  participant E as Endorsing peers
+  participant O as Ordering service
+  participant P as Committing peers
+  App-&gt;&gt;E: 1. Transaction proposal (signed)
+  E-&gt;&gt;E: 2. Simulate chaincode, sign result
+  E--&gt;&gt;App: 3. Endorsements
+  App-&gt;&gt;O: 4. Submit endorsed transaction
+  O-&gt;&gt;O: 5. Order into a block
+  O-&gt;&gt;P: 6. Deliver block
+  P-&gt;&gt;P: 7. Validate endorsement policy &amp; versions
+  P-&gt;&gt;P: 8. Commit block, update world state
+  P--&gt;&gt;App: 9. Event: transaction committed"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Hyperledger Fabric transaction flow (execute → order → validate)</figcaption></figure>
+<ul>
+<li><strong>Application model (MVC-B):</strong> View, Control, Model (off-chain), Blockchain logic.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  UI[&quot;User interface / frontend&lt;br&gt;HTML · JS (View)&quot;]:::a &lt;--&gt; API[&quot;API layer / SDK&lt;br&gt;(Control)&quot;]:::b
+  API &lt;--&gt; CC[&quot;Chaincode&lt;br&gt;(smart contract)&quot;]:::c
+  CC &lt;--&gt; L[(&quot;Ledger&lt;br&gt;blocks + world state&quot;)]
+  API &lt;--&gt; DM[(&quot;Off-chain data model&lt;br&gt;(Model)&quot;)]"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Hyperledger Fabric application model (MVC-B)</figcaption></figure>
+<h3>2.6 Sawtooth Lake in brief</h3>
+<ul>
+<li><strong>PoET</strong> – a node is selected randomly based on the <strong>time it waited</strong>; Intel <strong>SGX</strong> trusted execution environment guarantees fairness (no energy waste).</li>
+<li><strong>Transaction families</strong> – domain-specific logic (Endpoint registry, IntegerKey, Marketplace) instead of a generic VM → smaller attack surface than Ethereum's EVM (DAO hack).</li>
+<li>Consensus options: <strong>PoET</strong> or <strong>quorum voting</strong> (instant finality).</li>
+</ul>
+<h3>2.7 Comparison of key Hyperledger frameworks</h3>
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>Fabric</th>
+  <th>Sawtooth Lake</th>
+  <th>Iroha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>By</td>
+  <td>IBM</td>
+  <td>Intel</td>
+  <td>Soramitsu</td>
+</tr>
+<tr>
+  <td>Consensus</td>
+  <td>PBFT / SIEVE / NOOPS (pluggable)</td>
+  <td>PoET / quorum voting</td>
+  <td>Sumeragi (BFT)</td>
+</tr>
+<tr>
+  <td>Smart contracts</td>
+  <td>Chaincode (Go/Java)</td>
+  <td>Transaction families</td>
+  <td>Commands / reusable libraries</td>
+</tr>
+<tr>
+  <td>Focus</td>
+  <td>General enterprise</td>
+  <td>Flexible business areas</td>
+  <td>Mobile, simple deployment</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><ul>
+<li>Hyperledger is the <strong>Linux Foundation's umbrella project (Dec 2015)</strong> for open-source, cross-industry, <strong>permissioned</strong> distributed ledgers; projects include <strong>Fabric, Sawtooth Lake, Iroha, Blockchain Explorer, Fabric Chaintool, Fabric SDK Py and Corda</strong>.</li>
+<li>Its <strong>reference architecture</strong> (identity, policy, blockchain and smart-contract services + APIs/SDKs/CLI + event stream) follows <strong>modularity, privacy, identity, auditability, interoperability and portability</strong>, best seen in <strong>Hyperledger Fabric</strong> with membership services, pluggable consensus and chaincode.</li>
+</ul>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Hyperledger: <strong>Linux Foundation, Dec 2015</strong>, not a blockchain.</li>
+<li>Projects: <strong>Fabric (IBM), Sawtooth Lake (Intel, PoET), Iroha (Sumeragi), Explorer, Chaintool, SDK Py, Corda (R3)</strong>.</li>
+<li>Reference architecture: <strong>identity · policy · blockchain · smart-contract services + APIs/SDKs/CLI + event stream</strong>.</li>
+<li>Requirements: <strong>Modular · Privacy · Identity · Auditability · Interoperability · Portability</strong>.</li>
+<li>Fabric: membership (RA, ECA, TCA, TLS-CA), consensus (batch PBFT, SIEVE, NOOPS), chaincode (Init, Invoke, Query, Main).</li>
+</ul>
+</div></div><div class="v v8" hidden><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>Hyperledger is a Linux Foundation project (Dec 2015) – not a blockchain – that builds open-source, permissioned distributed-ledger frameworks for business.</p>
+</div>
+<div class="sec sec-content"><h5><span class="sn">2</span>Content</h5><ul>
+<li><strong>Projects:</strong> Fabric (IBM – pluggable, chaincode), Sawtooth Lake (Intel – PoET + transaction families), Iroha (C++, Sumeragi BFT), Blockchain Explorer, Fabric Chaintool, Fabric SDK Py, Corda (R3).</li>
+<li><strong>Reference architecture:</strong> identity, policy, blockchain and smart-contract services + APIs/SDKs/CLI + gRPC event stream.</li>
+</ul>
+<figure class="dia"><div class="mmd" data-src="flowchart TB
+  API[&quot;Hyperledger APIs, SDKs, CLI&quot;]:::a
+  API --&gt; ID[&quot;Identity services&lt;br&gt;ledger &amp; resource identities&quot;]
+  API --&gt; PO[&quot;Policy services&lt;br&gt;configuration · access control · privacy&quot;]
+  API --&gt; BS[&quot;Blockchain services&lt;br&gt;consensus manager · distributed ledger&lt;br&gt;P2P protocol · ledger storage&quot;]:::b
+  API --&gt; SC[&quot;Smart-contract services&lt;br&gt;secure container · registry · life cycle&quot;]:::c
+  ID &amp; PO &amp; BS &amp; SC --&gt; EV[&quot;Event stream (gRPC) across all services&quot;]:::d"><div class="mmd-wait">Drawing diagram…</div></div><figcaption>Hyperledger reference architecture</figcaption></figure>
+<ul>
+<li><strong>Requirements:</strong> modular, privacy, identity, auditability, interoperability, portability.</li>
+<li><strong>Fabric:</strong> membership services (CAs), blockchain services (PBFT/SIEVE/NOOPS, ledger, gRPC), chaincode services (Docker); flow propose → endorse → order → commit.</li>
+</ul>
+</div>
+<div class="sec sec-summary"><h5><span class="sn">3</span>Conclusion / Summary</h5><p>Hyperledger provides modular enterprise blockchain frameworks, led by Fabric.</p>
+</div>
+<div class="sec sec-revise"><h5><span class="sn">4</span>Revision Remarks</h5><ul>
+<li>Fabric · Sawtooth · Iroha · Explorer · Chaintool · SDK Py · Corda.</li>
+</ul>
+</div></div></div></details>
+<details class="lq" id="i10"><summary><span class="qn">2</span><span class="qt">Blockchain in IoT – architecture, benefits and challenges</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="ref" data-ref="c3b7" data-m=""></div></div></details></div></div></section>
 <section class="exam" id="cat1" data-label="CAT 1"><div class="exam-head"><h2>CAT 1</h2><p>Unit I – Introduction to Blockchain · Unit II – Decentralization</p></div><div class="part partb"><div class="part-head"><h3>Part B — 16 Marks</h3><span class="part-tools"><button class="mini" data-act="open">Expand all</button><button class="mini" data-act="close">Collapse all</button></span></div><div class="qlist">
 <details class="lq" id="c1b1"><summary><span class="qn">1</span><span class="qt">i) Explain the features of Blockchain Technology. ii) Outline the different tiers in Blockchain Technology.</span><span class="mk mk-16M">16M</span></summary><div class="ans"><div class="mtoggle" role="group" aria-label="Answer length"><button data-m="16" class="on">16 Marks</button><button data-m="8">8 Marks</button></div><div class="v v16"><div class="sec sec-intro"><h5><span class="sn">1</span>Introduction</h5><p>A <strong>blockchain</strong> is a <em>peer-to-peer distributed ledger that is cryptographically secure, append-only, immutable and updatable only through consensus or agreement among peers</em>. It runs as a layer on top of the Internet, just as SMTP, HTTP or FTP run on top of TCP/IP.</p>
 <p>From a business point of view it is <em>a platform where peers exchange value using transactions without the need for a central trusted arbitrator</em>. This question has two parts:</p>
@@ -10102,7 +11262,8 @@ C = 16 × 4 × 9 × 25 × 5 mod 77 → 16 × 4 = 64; 64 × 9 = 576 mod 77 = 37; 
     if(r.dataset.m==='8') setMarks(r,'8');
     var host=r.closest('.exam');
     if(host&&host!==ex){
-      var tag=src.querySelector('summary .qt'); if(tag&&!tag.querySelector('.sem-tag')){var s=document.createElement('span');s.className='sem-tag';s.textContent='Asked in '+host.dataset.label;tag.appendChild(s);}
+      var tag=src.querySelector('summary .qt'), cls=host.id==='imp'?'imp-tag':'sem-tag';
+      if(tag&&!tag.querySelector('.'+cls)){var s=document.createElement('span');s.className='sem-tag '+cls;s.textContent=host.id==='imp'?'⚡ Important':'Asked in '+host.dataset.label;tag.appendChild(s);}
     }
   });
   observeAll();
@@ -10135,7 +11296,7 @@ C = 16 × 4 × 9 × 25 × 5 mod 77 → 16 × 4 = 64; 64 × 9 = 576 mod 77 = 37; 
   });
   // tabs
   exams.forEach(function(ex){var b=document.createElement('button');b.className='tab';b.textContent=ex.dataset.label;b.dataset.for=ex.id;b.onclick=function(){show(ex.id);history.replaceState(null,'','#'+ex.id);window.scrollTo(0,0)};tabs.appendChild(b);});
-  function show(id){exams.forEach(function(ex){ex.classList.toggle('on',ex.id===id)});[].slice.call(tabs.children).forEach(function(b){b.classList.toggle('on',b.dataset.for===id)});store.set('tab',id);}
+  function show(id){exams.forEach(function(ex){ex.classList.toggle('on',ex.id===id)});[].slice.call(tabs.children).forEach(function(b){b.classList.toggle('on',b.dataset.for===id)});store.set('tab2',id);}
   function fromHash(){
     var h=location.hash.slice(1); if(!h) return false;
     var el=document.getElementById(h); if(!el) return false;
@@ -10144,7 +11305,7 @@ C = 16 × 4 × 9 × 25 × 5 mod 77 → 16 × 4 = 64; 64 × 9 = 576 mod 77 = 37; 
     return true;
   }
   window.addEventListener('hashchange',fromHash);
-  if(!fromHash()){var last=store.get('tab');show(last&&document.getElementById(last)?last:exams[0].id);}
+  if(!fromHash()){var last=store.get('tab2');show(last&&document.getElementById(last)?last:exams[0].id);}
   // search
   var q=document.getElementById('q'), empty=document.getElementById('empty');
   q.addEventListener('input',function(){
